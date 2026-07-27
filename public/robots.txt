@@ -1,0 +1,6 @@
+# MAGNIKO - Official Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://magniko.store/sitemap.xml
