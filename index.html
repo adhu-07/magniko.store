@@ -1,130 +1,699 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Primary Meta Tags -->
-    <title>MAGNIKO — Small Bar. Big Difference. | Healthy Seed Snack Bar</title>
-    <meta name="title" content="MAGNIKO — Small Bar. Big Difference. | Healthy Seed Snack Bar" />
-    <meta name="description" content="Magniko creates healthy snack bars in India crafted with naturally magnesium-rich ingredients like sprouted pumpkin seeds, golden sesame seeds, and single-origin 72% dark cacao." />
-    <meta name="keywords" content="Magniko, Magniko Bars, Healthy Snacks, Healthy Snack India, Healthy Snack for Work, Healthy Evening Snack, Healthy Office Snack, Healthy College Snack, Nutritious Snack, Daily Snack, Seed Bar, Dark Chocolate Snack, Pumpkin Seed Snack, Sesame Seed Snack, Sunflower Seed Snack, Magnesium Rich Foods, Magnesium Rich Snack, Magnesium Snack, Natural Snack, Better Snack Choice, Snack for Active Lifestyle, Snack for Gym Lifestyle, Recovery Snack, Whole Food Snack, Premium Snack Bar, Crafted Seed Bar" />
-    <meta name="author" content="MAGNIKO" />
-    <link rel="canonical" href="https://magniko.store" />
+    <!-- Basic SEO -->
+    <title>Magniko | Premium Magnesium Bars for Energy, Recovery & Better Sleep</title>
+    <meta name="description" content="Discover Magniko: Premium magnesium and protein energy bars designed for energy, muscle recovery, and better sleep. Fast local delivery exclusively around SCMS Karukutty.">
+    <meta name="keywords" content="Magniko, magnesium bar, protein bar, energy bar, healthy snack, SCMS Karukutty, fitness snack, Seed Rush, Choco Nut, Dark Crunch, recovery, sleep">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://iili.io/CSyinl2.md.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://iili.io/CSyinl2.md.png">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://magniko.store" />
-    <meta property="og:title" content="MAGNIKO — Small Bar. Big Difference." />
-    <meta property="og:description" content="Magniko creates snack bars crafted with naturally magnesium-rich ingredients. Everyday whole-food nutrition." />
-    <meta property="og:image" content="https://magniko.store/og-image.jpg" />
-    <meta property="og:site_name" content="MAGNIKO" />
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://magniko.store" />
-    <meta name="twitter:title" content="MAGNIKO — Small Bar. Big Difference." />
-    <meta name="twitter:description" content="Magniko creates snack bars crafted with naturally magnesium-rich ingredients. Everyday whole-food nutrition." />
-    <meta name="twitter:image" content="https://magniko.store/twitter-card.jpg" />
-
-    <!-- Google Fonts: Space Grotesk & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet" />
-
-    <!-- JSON-LD Structured Data: Organization & Product Schema -->
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Magniko | Magnesium & Protein Energy Bars">
+    <meta property="og:description" content="Fuel your day with Magniko Magnesium & Protein Energy Bars. Fast delivery around SCMS Karukutty.">
+    <meta property="og:image" content="https://iili.io/CSyinl2.md.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "MAGNIKO",
-        "url": "https://magniko.store",
-        "logo": "https://magniko.store/logo.png",
-        "sameAs": [
-          "https://www.instagram.com/snackwithmagniko",
-          "https://shop.magniko.store"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "contact@magniko.store",
-          "contactType": "Customer Service"
+    {
+      "@context": "https://schema.org",
+      "@type": "Brand",
+      "name": "Magniko",
+      "url": "http://shop.magniko.store",
+      "logo": "https://iili.io/CSyinl2.md.png",
+      "description": "Premium magnesium and protein energy bars with exclusive local delivery at SCMS Karukutty."
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.260.0/lucide.min.js"></script>
+
+    <style>
+        :root {
+            --brand-blue: #0b39ff;
+            --brand-yellow: #ccff00;
+            --shadow-color: #061875;
         }
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Magniko Magnesium Snack Bar - Dark Crunch",
-        "image": "https://magniko.store/dark-crunch-bar.png",
-        "description": "Natural snack bar crafted with 72% dark cacao, sprouted pumpkin seeds, and Maldon sea salt flakes providing 185mg bioavailable elemental magnesium.",
-        "brand": {
-          "@type": "Brand",
-          "name": "MAGNIKO"
-        },
-        "offers": {
-          "@type": "Offer",
-          "url": "https://shop.magniko.store",
-          "priceCurrency": "INR",
-          "price": "199",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    </script>
 
-    <!-- JSON-LD FAQPage Rich Snippet Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Magniko?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Magniko is a premium healthy snack bar crafted in India using naturally magnesium-rich whole food ingredients like sprouted pumpkin seeds, sesame seeds, sunflower seeds, and single-origin 72% dark cacao."
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--brand-blue);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .font-display {
+            font-family: 'Kanit', sans-serif;
+        }
+
+        /* Custom Grid Background */
+        .bg-grid {
+            background-size: 60px 60px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+        }
+
+        /* 3D Solid Text Shadow */
+        .text-3d {
+            text-shadow: 
+                3px 3px 0px var(--shadow-color),
+                6px 6px 0px var(--shadow-color),
+                9px 9px 0px var(--shadow-color);
+        }
+
+        .text-3d-sm {
+            text-shadow: 
+                2px 2px 0px var(--shadow-color),
+                4px 4px 0px var(--shadow-color);
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Light section rounded top */
+        .curved-section {
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            background-color: #e5e7eb; /* tailwind gray-200 */
+        }
+
+        /* Custom Colors */
+        .bg-neon { background-color: var(--brand-yellow); }
+        .text-neon { color: var(--brand-yellow); }
+        .border-neon { border-color: var(--brand-yellow); }
+
+        /* Animations */
+        @keyframes float1 {
+            0%, 100% { transform: translateY(0) rotate(-6deg); }
+            50% { transform: translateY(-20px) rotate(-4deg); }
+        }
+        @keyframes float2 {
+            0%, 100% { transform: translateY(0) rotate(8deg); }
+            50% { transform: translateY(-15px) rotate(10deg); }
+        }
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .animate-float-1 { animation: float1 6s ease-in-out infinite; }
+        .animate-float-2 { animation: float2 5s ease-in-out infinite; }
+        .animate-spin-slow { animation: spin-slow 12s linear infinite; }
+        
+        .marquee-track {
+            display: flex;
+            width: 200%;
+            animation: marquee 15s linear infinite;
+        }
+
+        /* Hide scrollbar for clean horizontal scrolls */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Product Interactive Styles */
+        .product-img-wrapper img {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .is-bite img {
+            transform: scale(0.65) !important;
+        }
+
+        /* FAQ Icon Rotation Fix */
+        .faq-btn.is-open svg {
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+        }
+
+        /* --- 100% PURE CSS PRICE TOGGLE (NO JS REQUIRED) --- */
+        .size-toggle {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+        }
+
+        /* 1. Image Shrinking for BITE mode */
+        .size-toggle:checked ~ .product-img-wrapper .product-image {
+            transform: scale(0.65) !important;
+        }
+
+        /* 2. Label Colors */
+        .size-toggle:checked ~ .price-toggle-wrapper .label-bar { color: #6b7280; } /* gray-500 */
+        .size-toggle:checked ~ .price-toggle-wrapper .label-bite { color: #000000; } /* black */
+        
+        .size-toggle:not(:checked) ~ .price-toggle-wrapper .label-bar { color: #000000; }
+        .size-toggle:not(:checked) ~ .price-toggle-wrapper .label-bite { color: #6b7280; }
+
+        /* 3. Slider Movement */
+        .size-toggle:checked ~ .price-toggle-wrapper .toggle-bg .slider-ball {
+            transform: translateX(24px);
+        }
+
+        /* 4. Price Swapping */
+        .size-toggle:checked ~ .price-container .price-bar { display: none !important; }
+        .size-toggle:checked ~ .price-container .price-bite { display: block !important; }
+
+        .size-toggle:not(:checked) ~ .price-container .price-bar { display: block !important; }
+        .size-toggle:not(:checked) ~ .price-container .price-bite { display: none !important; }
+
+        /* Pure CSS Dropdown Icon Rotation */
+        #drop-zone-toggle:checked + label .drop-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Toast Animation */
+        .toast-show {
+            transform: translate(-50%, 0) !important;
+            opacity: 1 !important;
+        }
+
+        /* Make sure the slider background doesn't steal your clicks */
+        .slider-bg {
+            pointer-events: none !important;
+        }
+
+        button { cursor: pointer; }
+    </style>
+</head>
+<body class="relative min-h-screen antialiased flex flex-col">
+
+    <!-- Promo Banner -->
+    <div class="w-full bg-neon text-black text-center py-2 px-4 z-[60] relative border-b-2 border-black flex justify-center items-center">
+        <span class="font-display font-bold uppercase tracking-wider text-xs md:text-sm">
+            ⚡ 10% OFF YOUR FIRST ORDER! USE CODE: <span class="bg-black text-white px-2 py-0.5 rounded ml-1">FIRSTBITE</span> AT CHECKOUT ⚡
+        </span>
+    </div>
+
+    <div class="fixed inset-0 bg-grid z-[-1] pointer-events-none"></div>
+
+    <nav class="w-full px-6 py-4 flex justify-between items-center z-50 sticky top-0 bg-transparent backdrop-blur-sm">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <a href="#" class="block h-12 w-auto">
+                <!-- Magniko Logo -->
+                <img src="https://iili.io/CSyinl2.md.png" alt="Magniko Magnesium Protein Bar Brand Logo" class="h-full object-contain drop-shadow-md">
+            </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-4">
+            <a href="#about" class="px-5 py-2 rounded-full border border-white/30 text-sm font-medium hover:bg-white/10 transition-colors">Our Bars</a>
+            <a href="#products" class="px-5 py-2 rounded-full border border-white/30 text-sm font-medium hover:bg-white/10 transition-colors">Flavors</a>
+            <a href="#faq" class="px-5 py-2 rounded-full border border-white/30 text-sm font-medium hover:bg-white/10 transition-colors">FAQ</a>
+        </div>
+
+        <!-- CTA & Mobile Toggle -->
+        <div class="flex items-center gap-4 z-[70]">
+            <a href="https://instagram.com/snackwithmagniko" target="_blank" class="text-white hover:text-neon transition-colors hidden sm:block">
+                <i data-lucide="instagram" class="w-6 h-6"></i>
+            </a>
+            <a href="http://shop.magniko.store" target="_blank" class="hidden md:block px-6 py-2 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-[#0b39ff] transition-all">Shop Now</a>
+            
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white p-1 focus:outline-none">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[var(--brand-blue)] z-[60] flex flex-col items-center justify-center gap-8 transform translate-x-full transition-transform duration-300 md:hidden">
+        <div class="absolute inset-0 bg-grid z-[-1] pointer-events-none opacity-30"></div>
+        <a href="#about" class="mobile-link font-display text-4xl uppercase font-black text-white hover:text-neon transition-colors">Our Bars</a>
+        <a href="#products" class="mobile-link font-display text-4xl uppercase font-black text-white hover:text-neon transition-colors">Flavors</a>
+        <a href="#faq" class="mobile-link font-display text-4xl uppercase font-black text-white hover:text-neon transition-colors">FAQ</a>
+        <a href="http://shop.magniko.store" target="_blank" class="mt-8 px-10 py-4 rounded-full border-4 border-neon text-neon font-black text-2xl uppercase tracking-widest hover:bg-neon hover:text-black transition-all">Shop Now</a>
+    </div>
+
+    <main class="relative w-full min-h-[90vh] flex flex-col items-center justify-center pt-10 pb-32 px-4 overflow-hidden">
+        
+        <!-- Background Typography -->
+        <div class="text-center z-10 relative pointer-events-none">
+            <h1 class="font-display text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight text-neon text-3d uppercase mb-2">#MAGNIKO</h1>
+            <h1 class="font-display text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight text-white text-3d uppercase">MAGNESIUM</h1>
+            <h1 class="font-display text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight text-white text-3d uppercase">ENERGY BARS</h1>
+        </div>
+
+        <!-- Drawn Arrow SVG -->
+        <svg class="absolute bottom-[25%] left-[20%] w-24 h-24 text-neon hidden md:block" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 80 Q 30 20, 80 20" />
+            <path d="M60 10 L 80 20 L 70 40" />
+        </svg>
+
+        <!-- Spinning Badge -->
+        <div class="absolute bottom-[10%] right-[10%] md:right-[20%] w-32 h-32 md:w-40 md:h-40 z-30">
+            <div class="relative w-full h-full bg-neon rounded-full flex items-center justify-center shadow-2xl">
+                <!-- Inner arrow -->
+                <i data-lucide="arrow-up-right" class="text-black w-8 h-8 md:w-12 md:h-12 absolute z-10"></i>
+                <!-- Curved text -->
+                <svg viewBox="0 0 100 100" class="absolute inset-0 w-full h-full animate-spin-slow">
+                    <path id="curve" fill="transparent" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+                    <text class="text-[11px] font-bold font-display uppercase tracking-widest" fill="black">
+                        <textPath href="#curve" startOffset="0">
+                            SHOP NOW • MAGNIKO BARS • SHOP NOW • 
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <section id="products" class="curved-section w-full py-24 px-4 md:px-12 text-black relative z-30 shadow-[0_-20px_50px_rgba(0,0,0,0.3)]">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-6xl uppercase font-black text-gray-900 tracking-tight">The Ultimate <br/> Magnesium Snack</h2>
+                <p class="mt-4 text-gray-600 font-medium max-w-2xl mx-auto">Power through your classes and workouts. Real ingredients, high protein options, and perfectly sized for your cravings.</p>
+            </div>
+
+            <!-- 3 Step Process/Feature Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 relative">
+                
+                <!-- Connector Arrows (Desktop only) -->
+                <div class="hidden md:block absolute top-[60%] left-[30%] text-black w-8 h-8 z-10 -translate-y-1/2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+                <div class="hidden md:block absolute top-[60%] left-[63%] text-black w-8 h-8 z-10 -translate-y-1/2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="bg-gray-100/80 rounded-[32px] p-8 text-center flex flex-col items-center shadow-lg border border-gray-200">
+                    <h3 class="font-display text-2xl font-black uppercase mb-2">4 Epic <br> Flavors</h3>
+                    <p class="text-sm text-gray-500 mb-10">Choco Nut, Dark Crunch, Dark Rush, and the protein-packed Seed Rush.</p>
+                    
+                    <div class="mt-auto w-full bg-[#1e40af] text-white rounded-2xl p-2 flex items-center justify-between shadow-md">
+                        <div class="flex items-center gap-2 px-2">
+                            <div class="w-8 h-8 rounded-full bg-blue-400 overflow-hidden flex items-center justify-center">
+                                <i data-lucide="zap" class="w-4 h-4 text-neon"></i>
+                            </div>
+                            <div class="text-left leading-tight">
+                                <div class="font-bold text-xs">Magnesium Rich</div>
+                                <div class="text-[10px] text-blue-200">For Energy</div>
+                            </div>
+                        </div>
+                        <div class="bg-neon text-black text-xs font-bold px-3 py-2 rounded-xl">
+                            100% REAL
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-100/80 rounded-[32px] p-8 text-center flex flex-col items-center shadow-lg border border-gray-200">
+                    <h3 class="font-display text-2xl font-black uppercase mb-2">Bars & <br> Bites</h3>
+                    <p class="text-sm text-gray-500 mb-10">Need a quick boost? Grab a bite. Need full fuel? Go for the bar.</p>
+                    
+                    <div class="mt-auto w-full bg-[#1e40af] text-white rounded-2xl p-2 flex items-center justify-between shadow-md relative">
+                        <div class="font-mono text-sm px-4 py-1">BITES FROM ₹50</div>
+                        <div class="bg-[#2563eb] text-white text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1">
+                            BARS FROM ₹100
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-100/80 rounded-[32px] p-8 text-center flex flex-col items-center shadow-lg border border-gray-200">
+                    <h3 class="font-display text-2xl font-black uppercase mb-2">Local SCMS <br> Delivery</h3>
+                    <p class="text-sm text-gray-500 mb-10">Currently dropping exclusively around SCMS Engineering, Karukutty. Fast 3-4 day delivery.</p>
+                    
+                    <div class="mt-auto relative">
+                        <div class="bg-neon text-black rounded-3xl py-4 px-8 shadow-xl">
+                            <div class="text-[10px] font-bold uppercase mb-1">Campus Drop</div>
+                            <div class="font-display text-xl font-black">3-4 DAYS</div>
+                        </div>
+                        <div class="absolute -bottom-2 -left-2 w-0 h-0 border-t-[15px] border-t-neon border-l-[15px] border-l-transparent"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20 px-4 overflow-hidden border-b-4 border-black">
+        <h2 class="font-display text-4xl font-black text-center text-black uppercase mb-12">Our Lineup</h2>
+        
+        <div class="flex gap-6 overflow-x-auto no-scrollbar pb-12 px-4 md:px-12 snap-x snap-mandatory items-start" id="product-gallery">
+            
+            <!-- Product Item 1 -->
+            <div class="product-card min-w-[300px] md:min-w-[350px] bg-gray-50 border-2 border-black rounded-3xl p-5 snap-center hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all group relative">
+                
+                <!-- PURE CSS TOGGLE INPUT -->
+                <input type="checkbox" id="toggle-1" class="size-toggle" />
+
+                <div class="product-img-wrapper w-full h-64 bg-gray-200 rounded-2xl mb-6 overflow-hidden relative flex items-center justify-center">
+                    <img src="https://iili.io/CSy8ppf.md.png" alt="Magniko Choco Nut Magnesium Energy Bar" class="product-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 right-3 bg-neon text-black text-xs font-bold px-3 py-1 rounded-full border border-black uppercase z-10">
+                        Bestseller
+                    </div>
+                </div>
+                
+                <h4 class="font-display text-2xl font-black uppercase text-black mb-1">Choco Nut</h4>
+                <div class="text-sm font-medium text-gray-500 mb-4">The classic magnesium energy hit.</div>
+                
+                <!-- Visual Toggle UI -->
+                <div class="price-toggle-wrapper flex items-center justify-center gap-3 bg-gray-200 rounded-full py-2 px-4 mb-4">
+                    <label for="toggle-1" class="label-bar text-sm font-bold cursor-pointer transition-colors">BAR</label>
+                    <label for="toggle-1" class="toggle-bg relative inline-block w-[50px] h-[26px] bg-black rounded-full cursor-pointer transition-colors">
+                        <span class="slider-ball absolute left-1 bottom-1 w-[18px] h-[18px] bg-neon rounded-full transition-transform duration-300"></span>
+                    </label>
+                    <label for="toggle-1" class="label-bite text-sm font-bold cursor-pointer transition-colors">BITE</label>
+                </div>
+
+                <div class="price-container flex justify-between items-center mt-2">
+                    <div>
+                        <span class="price-bar text-3xl font-black text-black font-display block">₹100</span>
+                        <span class="price-bite text-3xl font-black text-black font-display hidden">₹50</span>
+                    </div>
+                    <a href="http://shop.magniko.store" target="_blank" class="bg-black text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-neon hover:text-black transition-colors border-2 border-transparent hover:border-black">Order</a>
+                </div>
+            </div>
+
+            <!-- Product Item 2 -->
+            <div class="product-card min-w-[300px] md:min-w-[350px] bg-gray-50 border-2 border-black rounded-3xl p-5 snap-center hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all group relative">
+                
+                <!-- PURE CSS TOGGLE INPUT -->
+                <input type="checkbox" id="toggle-2" class="size-toggle" />
+
+                <div class="product-img-wrapper w-full h-64 bg-gray-200 rounded-2xl mb-6 overflow-hidden relative flex items-center justify-center">
+                    <img src="https://iili.io/CSyedUG.md.png" alt="Magniko Dark Crunch Magnesium Snack Bar" class="product-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                
+                <h4 class="font-display text-2xl font-black uppercase text-black mb-1">Dark Crunch</h4>
+                <div class="text-sm font-medium text-gray-500 mb-4">Intense dark cocoa with a snap.</div>
+                
+                <!-- Visual Toggle UI -->
+                <div class="price-toggle-wrapper flex items-center justify-center gap-3 bg-gray-200 rounded-full py-2 px-4 mb-4">
+                    <label for="toggle-2" class="label-bar text-sm font-bold cursor-pointer transition-colors">BAR</label>
+                    <label for="toggle-2" class="toggle-bg relative inline-block w-[50px] h-[26px] bg-black rounded-full cursor-pointer transition-colors">
+                        <span class="slider-ball absolute left-1 bottom-1 w-[18px] h-[18px] bg-neon rounded-full transition-transform duration-300"></span>
+                    </label>
+                    <label for="toggle-2" class="label-bite text-sm font-bold cursor-pointer transition-colors">BITE</label>
+                </div>
+
+                <div class="price-container flex justify-between items-center mt-2">
+                    <div>
+                        <span class="price-bar text-3xl font-black text-black font-display block">₹110</span>
+                        <span class="price-bite text-3xl font-black text-black font-display hidden">₹55</span>
+                    </div>
+                    <a href="http://shop.magniko.store" target="_blank" class="bg-black text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-neon hover:text-black transition-colors border-2 border-transparent hover:border-black">Order</a>
+                </div>
+            </div>
+
+            <!-- Product Item 3 -->
+            <div class="product-card min-w-[300px] md:min-w-[350px] bg-gray-50 border-2 border-black rounded-3xl p-5 snap-center hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all group relative">
+                
+                <!-- PURE CSS TOGGLE INPUT -->
+                <input type="checkbox" id="toggle-3" class="size-toggle" />
+
+                <div class="product-img-wrapper w-full h-64 bg-gray-200 rounded-2xl mb-6 overflow-hidden relative flex items-center justify-center">
+                    <img src="https://iili.io/CSyVoIn.md.png" alt="Magniko Dark Rush Energy Bar" class="product-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                
+                <h4 class="font-display text-2xl font-black uppercase text-black mb-1">Dark Rush</h4>
+                <div class="text-sm font-medium text-gray-500 mb-4">Smooth dark energy for focus.</div>
+                
+                <!-- Visual Toggle UI -->
+                <div class="price-toggle-wrapper flex items-center justify-center gap-3 bg-gray-200 rounded-full py-2 px-4 mb-4">
+                    <label for="toggle-3" class="label-bar text-sm font-bold cursor-pointer transition-colors">BAR</label>
+                    <label for="toggle-3" class="toggle-bg relative inline-block w-[50px] h-[26px] bg-black rounded-full cursor-pointer transition-colors">
+                        <span class="slider-ball absolute left-1 bottom-1 w-[18px] h-[18px] bg-neon rounded-full transition-transform duration-300"></span>
+                    </label>
+                    <label for="toggle-3" class="label-bite text-sm font-bold cursor-pointer transition-colors">BITE</label>
+                </div>
+
+                <div class="price-container flex justify-between items-center mt-2">
+                    <div>
+                        <span class="price-bar text-3xl font-black text-black font-display block">₹110</span>
+                        <span class="price-bite text-3xl font-black text-black font-display hidden">₹55</span>
+                    </div>
+                    <a href="http://shop.magniko.store" target="_blank" class="bg-black text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-neon hover:text-black transition-colors border-2 border-transparent hover:border-black">Order</a>
+                </div>
+            </div>
+
+            <!-- Product Item 4 -->
+            <div class="product-card min-w-[300px] md:min-w-[350px] bg-gray-50 border-2 border-black rounded-3xl p-5 snap-center hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] transition-all group relative">
+                
+                <!-- PURE CSS TOGGLE INPUT -->
+                <input type="checkbox" id="toggle-4" class="size-toggle" />
+
+                <div class="product-img-wrapper w-full h-64 bg-gray-200 rounded-2xl mb-6 overflow-hidden relative flex items-center justify-center">
+                    <img src="https://iili.io/CSyryc7.md.png" alt="Magniko Seed Rush High Protein Magnesium Bar" class="product-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 right-3 bg-black text-white text-xs font-bold px-3 py-1 rounded-full uppercase z-10">
+                        High Protein
+                    </div>
+                </div>
+                
+                <h4 class="font-display text-2xl font-black uppercase text-black mb-1">Seed Rush</h4>
+                <div class="text-sm font-medium text-gray-500 mb-4">Loaded with seeds and protein.</div>
+                
+                <!-- Visual Toggle UI -->
+                <div class="price-toggle-wrapper flex items-center justify-center gap-3 bg-gray-200 rounded-full py-2 px-4 mb-4">
+                    <label for="toggle-4" class="label-bar text-sm font-bold cursor-pointer transition-colors">BAR</label>
+                    <label for="toggle-4" class="toggle-bg relative inline-block w-[50px] h-[26px] bg-black rounded-full cursor-pointer transition-colors">
+                        <span class="slider-ball absolute left-1 bottom-1 w-[18px] h-[18px] bg-neon rounded-full transition-transform duration-300"></span>
+                    </label>
+                    <label for="toggle-4" class="label-bite text-sm font-bold cursor-pointer transition-colors">BITE</label>
+                </div>
+
+                <div class="price-container flex justify-between items-center mt-2">
+                    <div>
+                        <span class="price-bar text-3xl font-black text-black font-display block">₹120</span>
+                        <span class="price-bite text-3xl font-black text-black font-display hidden">₹60</span>
+                    </div>
+                    <a href="http://shop.magniko.store" target="_blank" class="bg-black text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-neon hover:text-black transition-colors border-2 border-transparent hover:border-black">Order</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="shop" class="bg-neon text-black py-24 relative overflow-hidden flex flex-col items-center justify-center">
+        <!-- Marquee -->
+        <div class="absolute top-10 w-full overflow-hidden whitespace-nowrap opacity-30 pointer-events-none">
+            <div class="marquee-track">
+                <span class="font-display text-[10vw] font-black uppercase mx-4">FUEL YOUR DAY - MAGNIKO - </span>
+                <span class="font-display text-[10vw] font-black uppercase mx-4">FUEL YOUR DAY - MAGNIKO - </span>
+            </div>
+        </div>
+
+        <div class="relative z-10 text-center flex flex-col items-center">
+            <h2 class="font-display text-5xl md:text-8xl font-black uppercase mb-6 text-3d-sm text-white">Ready to Snack?</h2>
+            <p class="font-medium text-lg md:text-xl max-w-lg mx-auto mb-10">Head over to our official store to place your order. Fast delivery available exclusively for SCMS Karukutty.</p>
+            
+            <a href="http://shop.magniko.store" target="_blank" class="group relative inline-flex items-center justify-center px-12 py-6 text-xl font-black uppercase tracking-widest text-white transition-all duration-200 bg-black border-4 border-black rounded-full hover:bg-transparent hover:text-black">
+                <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+                <span class="relative flex items-center gap-4">
+                    Go to Store
+                    <i data-lucide="arrow-right" class="w-6 h-6 group-hover:translate-x-2 transition-transform"></i>
+                </span>
+            </a>
+        </div>
+
+        <!-- Marquee Bottom -->
+        <div class="absolute bottom-4 w-full overflow-hidden whitespace-nowrap opacity-30 pointer-events-none">
+            <div class="marquee-track" style="animation-direction: reverse; animation-duration: 20s;">
+                <span class="font-display text-[8vw] font-black uppercase mx-4">ORDER NOW - SECURE YOUR BARS - </span>
+                <span class="font-display text-[8vw] font-black uppercase mx-4">ORDER NOW - SECURE YOUR BARS - </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="delivery" class="bg-[var(--brand-blue)] py-24 px-4 md:px-12 relative z-20 flex flex-col items-center justify-center border-b-4 border-black">
+        <div class="absolute inset-0 bg-grid z-[-1] pointer-events-none opacity-40"></div>
+        
+        <div class="max-w-3xl mx-auto w-full flex flex-col items-center text-center">
+            <h2 class="font-display text-4xl md:text-6xl uppercase font-black tracking-tight text-white mb-4 text-3d-sm">Campus Drops</h2>
+            
+            <div class="bg-black text-neon font-bold uppercase tracking-wider text-sm px-4 py-1 rounded-full mb-8 border border-neon">
+                Estimated Delivery: 3-4 Days
+            </div>
+
+            <p class="text-white/90 font-medium text-lg md:text-xl mb-12">
+                We deliver exclusively to SCMS School of Engineering and Technology, Karukutty. Select your drop zone below to see where we pull up.
+            </p>
+
+            <!-- Pure CSS Glassmorphism Dropdown -->
+            <div class="relative w-full max-w-md text-left z-[100]">
+                <!-- Hidden Checkbox for Toggle -->
+                <input type="checkbox" id="drop-zone-toggle" class="peer hidden" />
+                
+                <label for="drop-zone-toggle" class="glass-card w-full px-6 py-5 rounded-2xl flex justify-between items-center text-white font-display text-xl md:text-2xl font-black uppercase tracking-wide cursor-pointer transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.1)] relative z-50">
+                    <span id="drop-zone-text">Where we deliver</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-neon transition-transform duration-300 drop-icon"><path d="m6 9 6 6 6-6"/></svg>
+                </label>
+                
+                <!-- Dropdown Menu (Controlled by Peer) -->
+                <div class="absolute top-full left-0 w-full mt-4 glass-card rounded-2xl overflow-hidden flex flex-col transform origin-top transition-all duration-300 opacity-0 scale-95 pointer-events-none peer-checked:opacity-100 peer-checked:scale-100 peer-checked:pointer-events-auto shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-40">
+                    <div class="drop-option w-full text-left px-6 py-4 border-b border-white/10 hover:bg-white/20 transition-colors text-white font-bold text-lg cursor-pointer">Garden</div>
+                    <div class="drop-option w-full text-left px-6 py-4 border-b border-white/10 hover:bg-white/20 transition-colors text-white font-bold text-lg cursor-pointer">AC Block 1</div>
+                    <div class="drop-option w-full text-left px-6 py-4 border-b border-white/10 hover:bg-white/20 transition-colors text-white font-bold text-lg cursor-pointer">AC Block 2</div>
+                    <div class="drop-option w-full text-left px-6 py-4 hover:bg-white/20 transition-colors text-white font-bold text-lg cursor-pointer">AD Block</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="bg-[var(--brand-blue)] text-white py-24 px-4 md:px-12 relative">
+        <div class="fixed inset-0 bg-grid z-[-1] pointer-events-none opacity-50"></div>
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-display text-4xl md:text-6xl uppercase font-black tracking-tight text-neon mb-12 text-center text-3d-sm">FAQ</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display text-xl uppercase font-bold">Where do you currently deliver and how long does it take?</span>
+                        <i data-lucide="plus" class="w-6 h-6 text-neon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-white/80">
+                        We currently offer local delivery exclusively around the SCMS School of Engineering and Technology, Karukutty campus. You can expect your order to arrive within 3 to 4 days!
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display text-xl uppercase font-bold">What is the difference between a Bar and a Bite?</span>
+                        <i data-lucide="plus" class="w-6 h-6 text-neon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-white/80">
+                        Our "Bars" are full-sized portions perfect for a meal replacement or serious post-workout recovery. Our "Bites" are smaller, half-sized portions—great for a quick snack between classes or a light energy boost.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-display text-xl uppercase font-bold">Which bar is best for Protein?</span>
+                        <i data-lucide="plus" class="w-6 h-6 text-neon transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-white/80">
+                        If you are looking for maximum protein intake, go for the <strong>Seed Rush</strong> bar! It's specially formulated with a mix of seeds to give you a higher protein content compared to our chocolate-focused flavors.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12 px-6 border-t-4 border-neon text-center md:text-left">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center">
+                 <!-- Magniko Logo in Footer -->
+                <a href="#" class="block h-10 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                    <img src="https://iili.io/CSyinl2.md.png" alt="Magniko Magnesium Protein Bar Brand Logo" class="h-full object-contain">
+                </a>
+            </div>
+            
+            <div class="flex gap-6 text-sm font-medium text-white/60">
+                <a href="https://instagram.com/snackwithmagniko" target="_blank" class="hover:text-neon transition-colors flex items-center gap-2">
+                    <i data-lucide="instagram" class="w-4 h-4"></i> @snackwithmagniko
+                </a>
+                <a href="http://shop.magniko.store" target="_blank" class="hover:text-neon transition-colors">Store</a>
+            </div>
+        </div>
+        <div class="mt-8 text-xs text-white/40">
+            &copy; 2026 Magniko. All rights reserved. Delivering exclusively to SCMS Karukutty.
+        </div>
+    </footer>
+
+    <!-- Custom Toast Notification for Shop Links -->
+    <div id="shop-toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-black text-white px-8 py-4 rounded-full shadow-[0_10px_40px_rgba(204,255,0,0.4)] border-2 border-neon z-[100] font-display font-bold uppercase tracking-wide text-sm transform translate-y-24 opacity-0 transition-all duration-500 flex items-center gap-3 pointer-events-none">
+        <span class="text-xl">⚡</span>
+        Redirecting to Store...
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        let isMenuOpen = false;
+
+        const toggleMenu = () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('translate-x-full');
+                mobileBtn.innerHTML = '<i data-lucide="x" class="w-8 h-8"></i>';
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            } else {
+                mobileMenu.classList.add('translate-x-full');
+                mobileBtn.innerHTML = '<i data-lucide="menu" class="w-8 h-8"></i>';
+                document.body.style.overflow = ''; // Restore scrolling
             }
-          },
-          {
-            "@type": "Question",
-            "name": "Is Magniko made with real whole-food ingredients?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, 100%. Magniko uses organic sprouted seeds and single-origin dark chocolate with zero synthetic preservatives, artificial sweeteners, or fillers."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What ingredients are used in Magniko Bars?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Our core ingredients include sprouted organic pumpkin seeds, unhulled golden sesame seeds, cold-pressed sunflower kernels, 72% dark cacao nibs, and pure wildflower honey."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Who can enjoy Magniko as a daily snack?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Magniko is ideal for office professionals, gym recovery, college students, and anyone seeking daily magnesium nutrition."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How should Magniko be stored?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Store in a cool, dry place away from direct sunlight. No refrigeration required."
-            }
-          }
-        ]
-      }
+            lucide.createIcons(); // Re-initialize icons because DOM changed
+        };
+
+        mobileBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        // Simple FAQ Accordion Logic
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const content = btn.nextElementSibling;
+                
+                // Toggle hidden class
+                content.classList.toggle('hidden');
+                
+                // Toggle open class for CSS icon rotation
+                btn.classList.toggle('is-open');
+            });
+        });
+
+        // Shop Link Interceptor (For Preview Environment Feedback)
+        document.querySelectorAll('a[href*="shop.magniko.store"]').forEach(link => {
+            link.addEventListener('click', () => {
+                const toast = document.getElementById('shop-toast');
+                toast.classList.add('toast-show');
+                setTimeout(() => {
+                    toast.classList.remove('toast-show');
+                }, 3000);
+            });
+        });
+
+        // Dropdown Selection Logic (Pure CSS handles the opening/closing)
+        const dropOptions = document.querySelectorAll('.drop-option');
+        const dropZoneText = document.getElementById('drop-zone-text');
+        const dropZoneToggle = document.getElementById('drop-zone-toggle');
+
+        dropOptions.forEach(option => {
+            option.addEventListener('click', (e) => {
+                // Update label text
+                dropZoneText.innerText = e.target.innerText;
+                dropZoneText.classList.add('text-neon'); // Highlight selection
+                
+                // Close dropdown by unchecking the hidden checkbox
+                if (dropZoneToggle) {
+                    dropZoneToggle.checked = false;
+                }
+            });
+        });
     </script>
-  </head>
-  <body class="bg-[#0029FF] text-white selection:bg-[#CCFF00] selection:text-black antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+</body>
 </html>
