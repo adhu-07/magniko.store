@@ -182,6 +182,10 @@
             transform: rotate(180deg);
         }
 
+        /* Native Details/Summary Marker Hide */
+        summary { list-style: none; }
+        summary::-webkit-details-marker { display: none; }
+
         /* Toast Animation */
         .toast-show {
             transform: translate(-50%, 0) !important;
@@ -207,7 +211,7 @@
 
     <div class="fixed inset-0 bg-grid z-[-1] pointer-events-none"></div>
 
-    <nav class="w-full px-6 py-4 flex justify-between items-center z-50 sticky top-0 bg-transparent backdrop-blur-sm">
+    <nav class="w-full px-6 py-4 flex justify-between items-center z-[70] sticky top-0 bg-transparent backdrop-blur-sm">
         <!-- Logo -->
         <div class="flex items-center">
             <a href="#" class="block h-12 w-auto">
@@ -224,15 +228,16 @@
         </div>
 
         <!-- CTA & Mobile Toggle -->
-        <div class="flex items-center gap-4 z-[70]">
+        <div class="flex items-center gap-3 md:gap-4 z-[70]">
             <a href="https://instagram.com/snackwithmagniko" target="_blank" class="text-white hover:text-neon transition-colors hidden sm:block">
                 <i data-lucide="instagram" class="w-6 h-6"></i>
             </a>
-            <a href="http://shop.magniko.store" target="_blank" class="hidden md:block px-6 py-2 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-[#0b39ff] transition-all">Shop Now</a>
+            
+            <a href="http://shop.magniko.store" target="_blank" class="px-4 py-1.5 md:px-6 md:py-2 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-[#0b39ff] transition-all text-sm md:text-base">Shop Now</a>
             
             <!-- Mobile Hamburger Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-white p-1 focus:outline-none">
-                <i data-lucide="menu" class="w-8 h-8"></i>
+            <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-full border-2 border-white text-white bg-black/20 backdrop-blur-md hover:bg-neon hover:border-neon hover:text-black transition-all focus:outline-none">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
             </button>
         </div>
     </nav>
@@ -253,6 +258,20 @@
             <h1 class="font-display text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight text-neon text-3d uppercase mb-2">#MAGNIKO</h1>
             <h1 class="font-display text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight text-white text-3d uppercase">MAGNESIUM</h1>
             <h1 class="font-display text-[12vw] md:text-[8vw] leading-[0.85] tracking-tight text-white text-3d uppercase">ENERGY BARS</h1>
+        </div>
+
+        <!-- Floating 3D Image 1 (Top Right) -->
+        <div id="parallax-img-1" class="absolute top-[10%] md:top-[15%] right-[2%] md:right-[12%] z-20 w-[35vw] md:w-[22vw] max-w-[250px] pointer-events-none will-change-transform">
+            <div class="animate-float-1 w-full h-full drop-shadow-[0_25px_35px_rgba(0,0,0,0.6)]">
+                <img src="https://iili.io/CUFSAbt.png" alt="Magniko 3D Floating Energy Bar" class="w-full h-auto object-contain">
+            </div>
+        </div>
+
+        <!-- Floating 3D Image 2 (Bottom Left) -->
+        <div id="parallax-img-2" class="absolute bottom-[25%] left-[2%] md:left-[10%] z-20 w-[30vw] md:w-[18vw] max-w-[220px] pointer-events-none will-change-transform">
+            <div class="animate-float-2 w-full h-full drop-shadow-[0_25px_35px_rgba(0,0,0,0.6)]">
+                <img src="https://iili.io/CUFSAbt.png" alt="Magniko 3D Floating Energy Bar" class="w-full h-auto object-contain" style="transform: scaleX(-1);">
+            </div>
         </div>
 
         <!-- Drawn Arrow SVG -->
@@ -301,7 +320,7 @@
                 <!-- Card 1 -->
                 <div class="bg-gray-100/80 rounded-[32px] p-8 text-center flex flex-col items-center shadow-lg border border-gray-200">
                     <h3 class="font-display text-2xl font-black uppercase mb-2">4 Epic <br> Flavors</h3>
-                    <p class="text-sm text-gray-500 mb-10">Choco Nut, Dark Crunch, Dark Rush, and the protein-packed Seed Rush.</p>
+                    <p class="text-sm text-gray-500 mb-10">Choco Nut, Dark Crunch, Seed Rush, and the protein-packed Dark Rush.</p>
                     
                     <div class="mt-auto w-full bg-[#1e40af] text-white rounded-2xl p-2 flex items-center justify-between shadow-md">
                         <div class="flex items-center gap-2 px-2">
@@ -427,11 +446,14 @@
                 <input type="checkbox" id="toggle-3" class="size-toggle" />
 
                 <div class="product-img-wrapper w-full h-64 bg-gray-200 rounded-2xl mb-6 overflow-hidden relative flex items-center justify-center">
-                    <img src="https://iili.io/CSyVoIn.md.png" alt="Magniko Dark Rush Energy Bar" class="product-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <img src="https://iili.io/CSyVoIn.md.png" alt="Magniko Dark Rush High Protein Magnesium Bar" class="product-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 right-3 bg-black text-white text-xs font-bold px-3 py-1 rounded-full uppercase z-10">
+                        High Protein
+                    </div>
                 </div>
                 
                 <h4 class="font-display text-2xl font-black uppercase text-black mb-1">Dark Rush</h4>
-                <div class="text-sm font-medium text-gray-500 mb-4">Smooth dark energy for focus.</div>
+                <div class="text-sm font-medium text-gray-500 mb-4">Maximum protein for serious recovery.</div>
                 
                 <!-- Visual Toggle UI -->
                 <div class="price-toggle-wrapper flex items-center justify-center gap-3 bg-gray-200 rounded-full py-2 px-4 mb-4">
@@ -458,14 +480,14 @@
                 <input type="checkbox" id="toggle-4" class="size-toggle" />
 
                 <div class="product-img-wrapper w-full h-64 bg-gray-200 rounded-2xl mb-6 overflow-hidden relative flex items-center justify-center">
-                    <img src="https://iili.io/CSyryc7.md.png" alt="Magniko Seed Rush High Protein Magnesium Bar" class="product-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute top-3 right-3 bg-black text-white text-xs font-bold px-3 py-1 rounded-full uppercase z-10">
-                        High Protein
+                    <img src="https://iili.io/CSyryc7.md.png" alt="Magniko Seed Rush Low Sugar Magnesium Bar" class="product-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute top-3 right-3 bg-white text-black border-2 border-black text-xs font-bold px-3 py-1 rounded-full uppercase z-10">
+                        Lowest Sugar
                     </div>
                 </div>
                 
                 <h4 class="font-display text-2xl font-black uppercase text-black mb-1">Seed Rush</h4>
-                <div class="text-sm font-medium text-gray-500 mb-4">Loaded with seeds and protein.</div>
+                <div class="text-sm font-medium text-gray-500 mb-4">Loaded with seeds, with the lowest sugar.</div>
                 
                 <!-- Visual Toggle UI -->
                 <div class="price-toggle-wrapper flex items-center justify-center gap-3 bg-gray-200 rounded-full py-2 px-4 mb-4">
@@ -559,39 +581,39 @@
         <div class="max-w-4xl mx-auto">
             <h2 class="font-display text-4xl md:text-6xl uppercase font-black tracking-tight text-neon mb-12 text-center text-3d-sm">FAQ</h2>
             
-            <div class="space-y-4">
-                <!-- FAQ Item 1 -->
-                <div class="border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden">
-                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
-                        <span class="font-display text-xl uppercase font-bold">Where do you currently deliver and how long does it take?</span>
-                        <i data-lucide="plus" class="w-6 h-6 text-neon transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6 text-white/80">
+            <div class="space-y-4 relative z-10">
+                <!-- FAQ Item 1 (Pure HTML Details/Summary) -->
+                <details class="group border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden transition-all duration-300">
+                    <summary class="w-full px-6 py-5 flex justify-between items-center cursor-pointer focus:outline-none list-none">
+                        <span class="font-display text-xl uppercase font-bold pr-4">Where do you currently deliver and how long does it take?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-neon transition-transform duration-300 group-open:rotate-45 shrink-0"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-white/80 font-medium leading-relaxed border-t border-white/10 pt-4 mt-2">
                         We currently offer local delivery exclusively around the SCMS School of Engineering and Technology, Karukutty campus. You can expect your order to arrive within 3 to 4 days!
                     </div>
-                </div>
+                </details>
 
                 <!-- FAQ Item 2 -->
-                <div class="border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden">
-                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
-                        <span class="font-display text-xl uppercase font-bold">What is the difference between a Bar and a Bite?</span>
-                        <i data-lucide="plus" class="w-6 h-6 text-neon transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6 text-white/80">
-                        Our "Bars" are full-sized portions perfect for a meal replacement or serious post-workout recovery. Our "Bites" are smaller, half-sized portions—great for a quick snack between classes or a light energy boost.
+                <details class="group border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden transition-all duration-300">
+                    <summary class="w-full px-6 py-5 flex justify-between items-center cursor-pointer focus:outline-none list-none">
+                        <span class="font-display text-xl uppercase font-bold pr-4">What is the difference between a Bar and a Bite?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-neon transition-transform duration-300 group-open:rotate-45 shrink-0"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-white/80 font-medium leading-relaxed border-t border-white/10 pt-4 mt-2">
+                        Our <strong>Bars</strong> are full-sized portions perfect for a meal replacement or serious post-workout recovery. Our <strong>Bites</strong> are smaller, half-sized portions—great for a quick snack between classes or a light energy boost.
                     </div>
-                </div>
+                </details>
 
                 <!-- FAQ Item 3 -->
-                <div class="border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden">
-                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
-                        <span class="font-display text-xl uppercase font-bold">Which bar is best for Protein?</span>
-                        <i data-lucide="plus" class="w-6 h-6 text-neon transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden px-6 pb-6 text-white/80">
-                        If you are looking for maximum protein intake, go for the <strong>Seed Rush</strong> bar! It's specially formulated with a mix of seeds to give you a higher protein content compared to our chocolate-focused flavors.
+                <details class="group border border-white/20 rounded-2xl bg-white/5 backdrop-blur-sm overflow-hidden transition-all duration-300">
+                    <summary class="w-full px-6 py-5 flex justify-between items-center cursor-pointer focus:outline-none list-none">
+                        <span class="font-display text-xl uppercase font-bold pr-4">Which bar is best for Protein or Low Sugar?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-neon transition-transform duration-300 group-open:rotate-45 shrink-0"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-white/80 font-medium leading-relaxed border-t border-white/10 pt-4 mt-2">
+                        If you are looking for maximum protein intake, go for the <strong>Dark Rush</strong> bar! It is specially formulated to give you the highest protein content for recovery. If you are watching your sugar intake, our <strong>Seed Rush</strong> flavor has the lowest sugar of the entire lineup.
                     </div>
-                </div>
+                </details>
             </div>
         </div>
     </section>
@@ -633,37 +655,29 @@
         const mobileLinks = document.querySelectorAll('.mobile-link');
         let isMenuOpen = false;
 
+        const hamburgerIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>`;
+        const closeIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
+
         const toggleMenu = () => {
             isMenuOpen = !isMenuOpen;
             if (isMenuOpen) {
                 mobileMenu.classList.remove('translate-x-full');
-                mobileBtn.innerHTML = '<i data-lucide="x" class="w-8 h-8"></i>';
+                mobileBtn.innerHTML = closeIcon;
+                mobileBtn.classList.add('bg-neon', 'text-black', 'border-neon');
+                mobileBtn.classList.remove('text-white', 'border-white', 'bg-black/20');
                 document.body.style.overflow = 'hidden'; // Prevent background scrolling
             } else {
                 mobileMenu.classList.add('translate-x-full');
-                mobileBtn.innerHTML = '<i data-lucide="menu" class="w-8 h-8"></i>';
+                mobileBtn.innerHTML = hamburgerIcon;
+                mobileBtn.classList.remove('bg-neon', 'text-black', 'border-neon');
+                mobileBtn.classList.add('text-white', 'border-white', 'bg-black/20');
                 document.body.style.overflow = ''; // Restore scrolling
             }
-            lucide.createIcons(); // Re-initialize icons because DOM changed
         };
 
         mobileBtn.addEventListener('click', toggleMenu);
         mobileLinks.forEach(link => {
             link.addEventListener('click', toggleMenu);
-        });
-
-        // Simple FAQ Accordion Logic
-        document.querySelectorAll('.faq-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                const content = btn.nextElementSibling;
-                
-                // Toggle hidden class
-                content.classList.toggle('hidden');
-                
-                // Toggle open class for CSS icon rotation
-                btn.classList.toggle('is-open');
-            });
         });
 
         // Shop Link Interceptor (For Preview Environment Feedback)
@@ -694,6 +708,24 @@
                 }
             });
         });
+
+        // Advanced Parallax Scroll Effect for 3D Floating Bars
+        window.addEventListener('scroll', () => {
+            // Get scroll position (works across all browsers and iframes)
+            const scrollY = window.scrollY || document.documentElement.scrollTop;
+            const img1 = document.getElementById('parallax-img-1');
+            const img2 = document.getElementById('parallax-img-2');
+            
+            // Top Right Bar: Flies aggressively up and to the right while spinning
+            if (img1) {
+                img1.style.transform = `translate3d(${scrollY * 0.5}px, ${scrollY * -1.2}px, 0) rotate(${scrollY * 0.2}deg)`;
+            }
+            
+            // Bottom Left Bar: Drops down and to the left while spinning out
+            if (img2) {
+                img2.style.transform = `translate3d(${scrollY * -0.4}px, ${scrollY * 0.9}px, 0) rotate(${scrollY * -0.15}deg)`;
+            }
+        }, { passive: true }); // passive true ensures buttery smooth scrolling performance
     </script>
 </body>
 </html>
